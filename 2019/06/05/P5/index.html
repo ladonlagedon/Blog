@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>JavaScript 学习笔记 第二篇 类型转换 | 青衫</title>
+  <title>JavaScript 学习笔记 第二篇 类型转换及数学运算 | 青衫</title>
   <meta name="description" content="A minimal hexo theme.">
   <meta name="keywords" content="hexo,theme,minimal,otakism">
   <meta name="HandheldFriendly" content="True">
@@ -13,14 +13,14 @@
   <meta name="description" content="//使用 parseInt进行类型转换(纯数字字符串，数字开头的字符串，只截取整数部分) var age = prompt(&amp;apos;请输入你的年龄&amp;apos;,20); var age2 = parseInt(age); console.log(age,typeof age); console.log(age2,typeof age2);  //在 console 中转换以及在 console">
 <meta name="keywords" content="学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript 学习笔记 第二篇 类型转换">
+<meta property="og:title" content="JavaScript 学习笔记 第二篇 类型转换及数学运算">
 <meta property="og:url" content="/2019/06/05/P5/index.html">
 <meta property="og:site_name" content="青衫">
 <meta property="og:description" content="//使用 parseInt进行类型转换(纯数字字符串，数字开头的字符串，只截取整数部分) var age = prompt(&amp;apos;请输入你的年龄&amp;apos;,20); var age2 = parseInt(age); console.log(age,typeof age); console.log(age2,typeof age2);  //在 console 中转换以及在 console">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-05T11:25:56.083Z">
+<meta property="og:updated_time" content="2019-06-06T06:02:08.524Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript 学习笔记 第二篇 类型转换">
+<meta name="twitter:title" content="JavaScript 学习笔记 第二篇 类型转换及数学运算">
 <meta name="twitter:description" content="//使用 parseInt进行类型转换(纯数字字符串，数字开头的字符串，只截取整数部分) var age = prompt(&amp;apos;请输入你的年龄&amp;apos;,20); var age2 = parseInt(age); console.log(age,typeof age); console.log(age2,typeof age2);  //在 console 中转换以及在 console">
   
   
@@ -96,7 +96,7 @@
       <article id="post-P5" class="post article white-box article-type-post" itemscope itemprop="blogPost">
 	<h2 class="title">
   	<a href="/blog/2019/06/05/P5/">
-    	JavaScript 学习笔记 第二篇 类型转换
+    	JavaScript 学习笔记 第二篇 类型转换及数学运算
     </a>
   </h2>
 	<time>
@@ -163,7 +163,26 @@ console.log(b,typeof b);
 //使用 &apos;数字 + 空字符串&apos;,直接将 number 转换为 string 类型。
 var a = 11;
 var b = a + &apos;&apos;;
-console.log(b,typeof b);</code></pre>
+console.log(b,typeof b);
+
+
+//使用 JavaScript 进行数学运算
+ console.log(1+2);
+ console.log(1-2);
+ console.log(1*2);//乘以
+ console.log(1/2);//除以
+ console.log(9%2);//取余
+
+ //使用 Math.pow 计算 3 的 5 次方。
+ console.log(Math.pow(3,5));
+
+//使用 Math.pow 计算 2 的 14 次方。
+console.log(Math.pow(2,14));
+console.log(Math.pow(2,5 + Math.pow(3,2)));
+
+//使用 Math.sqrt 进行开根号运算
+console.log(Math.sqrt(9));
+console.log(Math.sqrt(81));</code></pre>
   	</div>
 
 	  <div class="article-tags tags">
