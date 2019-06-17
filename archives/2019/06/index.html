@@ -106,7 +106,7 @@
   
   <h2 class="title">
     <a href="/blog/2019/06/17/P11/">
-      JavaScript 学习笔记 第七篇 For 循环
+      JavaScript 学习笔记 第八篇 For 循环
     </a>
   </h2>
   
@@ -127,20 +127,18 @@ alert(&apos;After !!!&apos;);
 
 for(var k = 0;k &lt;= 14;k += 4){
     console.log(k);
-}
-
-for 循环判断 48 的约数,并计算对应约数的个数
-var count = 0;
-for (var m = 1; m &lt;= 48; m++) {
-    if (48 % m == 0) {
-        console.log(m);
-        count ++;
-    }
-}
-console.log(count);</code></pre>
+}</code></pre>
 
     
+	  <div class="readmore">
+      <a href="/blog/2019/06/17/P11/">Read More</a>
+    </div>
     
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
+	  </div>
     
 
   </section>
@@ -151,7 +149,7 @@ console.log(count);</code></pre>
   
   <h2 class="title">
     <a href="/blog/2019/06/17/P10/">
-      JavaScript 学习笔记 第六篇 三元运算符
+      JavaScript 学习笔记 第七篇 三元运算符
     </a>
   </h2>
   
@@ -177,17 +175,18 @@ if(sex == &apos;男&apos;){
     age &gt;= 20 ? alert(&apos;可以嫁人&apos;) : alert(&apos;不可以嫁人&apos;);
 }else{
     alert(&apos;请输入正确的性别 !!!&apos;);
-}
-
-// 使用更为简单的方法判断适龄结婚条件
-var age = parseInt(prompt(&apos;请输入年龄&apos;, 100));
-var sex = prompt(&apos;请输入性别&apos;, &apos;男&apos;);
-
-var minage = sex == &apos;男&apos; ? 22 : 20; // 判断性别，并将对应的最小结婚年龄赋值给 minage
-age &gt;= minage ? alert(&apos;可以结婚&apos;) : alert(&apos;不可以结婚&apos;); // 将用户输入的年龄和对应的最小结婚年龄对比。</code></pre>
+}</code></pre>
 
     
+	  <div class="readmore">
+      <a href="/blog/2019/06/17/P10/">Read More</a>
+    </div>
     
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
+	  </div>
     
 
   </section>
@@ -198,7 +197,7 @@ age &gt;= minage ? alert(&apos;可以结婚&apos;) : alert(&apos;不可以结婚
   
   <h2 class="title">
     <a href="/blog/2019/06/17/P9/">
-      JavaScript 学习笔记 第五篇 Switch-Case
+      JavaScript 学习笔记 第六篇 Switch-Case
     </a>
   </h2>
   
@@ -228,68 +227,18 @@ switch (star) {
     default:
         alert(&apos;未收录&apos;);
         break;
-}
-
-// 如果当前 case 判断成功，会执行对应的代码，如果当前没写 break；会一直往后执行，遇见 case 不再判断，直到遇见 break 为止。
-
-// 使用 switch case 判断月份对应天数。适用于有某些对应值的时候。
-var month = parseInt(prompt(&apos;输入月份&apos;, 1));
-
-// if一般使用 == 相等判断，switch 使用的是 === 全等判断。适用于有某些范围的时候。
-if(month == 1){
-    alert(&apos;31 Days&apos;);
-}
-
-switch (month) {
-    case 1:
-    case 3:
-    case 5:
-    case 7:
-    case 8:
-    case 10:
-    case 12:
-        alert(&apos;31天&apos;);
-        break;
-
-    case 4:
-    case 6:
-    case 9:
-    case 11:
-        alert(&apos;30天&apos;);
-        break;
-
-    case 2:
-        alert(&apos;平年28天，闰年29天&apos;);
-        break;
-
-    default:
-        alert(&apos;输入不正确&apos;);
-        break;
-}
-
-//使用 switch case 判断范围成绩，避免了多个 case 的出现。
-var score = parseInt(prompt(&apos;输入成绩&apos;, 1));
-
-switch (true) {
-    case score &gt;= 90:
-        alert(&apos;优秀&apos;);
-        break;
-
-    case score &gt;= 80:
-        alert(&apos;良好&apos;);
-        break;
-
-    case score &gt;= 60:
-        alert(&apos;及格&apos;);
-        break;
-
-    case score &lt;= 60:
-        alert(&apos;不及格&apos;);
-        break;
 }</code></pre>
 
     
+	  <div class="readmore">
+      <a href="/blog/2019/06/17/P9/">Read More</a>
+    </div>
     
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
+	  </div>
     
 
   </section>
@@ -300,7 +249,7 @@ switch (true) {
   
   <h2 class="title">
     <a href="/blog/2019/06/17/P8/">
-      JavaScript 学习笔记 第四篇 If-Else
+      JavaScript 学习笔记 第五篇 If-Else
     </a>
   </h2>
   
@@ -331,39 +280,18 @@ if (score &gt;= 90) {
     alert(&apos;还行吧&apos;);
 }else if(score &lt; 60){
     alert(&apos;你不行&apos;);
-}
-
-// 优化语句 因为前面已经判断过了，所以去掉多余的语句
-if (score &gt;= 90) {
-    alert(&apos;真牛皮&apos;);
-}else if(score &gt;= 80){
-    alert(&apos;算不错&apos;);
-}else if(score &gt;= 60){
-    alert(&apos;还行吧&apos;);
-}else if(score &lt; 60){
-    alert(&apos;你不行&apos;);
-}
-
-// 使用 if - else 语句 判断是否能结婚
-var age = parseInt(prompt(&apos;请输入年龄&apos;, 100));
-var sex = prompt(&apos;请输入性别&apos;, 100);
-
-if(sex == &apos;男&apos;){
-    if(age &gt;= 22){
-        alert(&apos;可以娶媳妇儿&apos;);
-    }else{
-        alert(&apos;不可以娶媳妇儿&apos;);
-    }
-}else{
-    if(age &gt;= 20){
-        alert(&apos;可以嫁人&apos;);
-    }else{
-        alert(&apos;不可以嫁人&apos;); 
-    }
 }</code></pre>
 
     
+	  <div class="readmore">
+      <a href="/blog/2019/06/17/P8/">Read More</a>
+    </div>
     
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
+	  </div>
     
 
   </section>
@@ -399,52 +327,18 @@ age &lt; 18 &amp;&amp; alert(&apos;未满十八岁，不可考驾照。&apos;);
 
 false &amp;&amp; alert(&apos;hah&apos;);
 
-true &amp;&amp; false || false &amp;&amp; !true // false 运算顺序为 非、与、或。
-
-
-// 赋值运算
-// a += 1 ,事实上就是 a = a + 1;
-var a = 10;
-var b = a++; // a++ ,先赋值，再运算。
-console.log(a, b); // 11,10
-
-var a = 10;
-var b = ++a; // ++a, 先运算，再赋值。
-console.log(a, b); // 11,11
-
-
-// a : 10 &gt;&gt; 11 &gt;&gt; 12
-// a++ ++a
-// b : 10 12
-var a = 10;
-var b = a++ + ++a;
-console.log(a, b); // 12,22
-
-// a : 10 &gt;&gt; 11 &gt;&gt; 12
-// ++a a++
-// b : 11 11
-var a = 10;
-var b = ++a + a++;
-console.log(a, b); // 12,22
-
-var a = 10;
-var b = ++a + ++a;
-console.log(a, b); // 12,23
-
-var a = 10;
-var b = a++ + a++;
-console.log(a, b); // 12,21
-
-var a = 10;
-var b = a-- + a--;
-console.log(a, b); // 8,19
-
-// 运算符计算顺序：++ -- ！ 贴身的 &gt;&gt;&gt; 数学 &gt;&gt;&gt; 比较 &gt;&gt;&gt; 逻辑 &gt;&gt;&gt; 赋值
-var a = true + false &amp;&amp; !false &gt;= 5 * 3 - false || true;
-console.log(a); //true</code></pre>
+true &amp;&amp; false || false &amp;&amp; !true // false 运算顺序为 非、与、或。</code></pre>
 
     
+	  <div class="readmore">
+      <a href="/blog/2019/06/17/P7/">Read More</a>
+    </div>
     
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
+	  </div>
     
 
   </section>
@@ -480,34 +374,18 @@ console.log(&apos;3&apos; / &apos;5&apos;);
 
 console.log(3 * true); // 3
 console.log(3 / false); // Infinity
-console.log(3 / null); // Infinity
-
-console.log(10 &gt; 8); //true
-console.log(8 &lt;= 8); //true
-console.log(1 != 2); //true
-console.log(1 === 1); //true
-
-// 字符串和字符串之间比较的是字符编码顺序
-console.log(&apos;a&apos; &gt; &apos;b&apos;); //false
-console.log(&apos;abc&apos; &lt; &apos;acd&apos;); //true
-
-// 纯数字会隐式转换 true 转为 1 false 转为 0 null不能和 0 判断相等
-console.log(1 &gt; &apos;0&apos;); //true
-console.log(1 == true); //true
-console.log(1 === true); //false
-console.log(null &gt; -0.00001); //true
-console.log(null &lt; 0.00001); //true
-
-console.log(null == 0); //false
-
-// NaN 不能和自己判断相等，也不能判断全等
-console.log(NaN == NaN); //false
-console.log(NaN === NaN); //false
-
-console.log(3 &gt; 2 &gt; 1); //false 因为 &apos;3 &gt; 2&apos; 为 true,实际上 &apos;3 &gt; 2 &gt; 1&apos; 是 &apos;true &gt; 1&apos;,所以结果为 false。</code></pre>
+console.log(3 / null); // Infinity</code></pre>
 
     
+	  <div class="readmore">
+      <a href="/blog/2019/06/17/P6/">Read More</a>
+    </div>
     
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
+	  </div>
     
 
   </section>
