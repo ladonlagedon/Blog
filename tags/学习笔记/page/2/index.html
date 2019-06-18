@@ -4,24 +4,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>JavaScript 学习笔记 第十篇 while 和 do-while | 青衫</title>
+  <title>Tag: 学习笔记 | 青衫</title>
   <meta name="description" content="A minimal hexo theme.">
   <meta name="keywords" content="hexo,theme,minimal,otakism">
   <meta name="HandheldFriendly" content="True">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="// for(var a = 0;a &amp;lt; 10; a++){ //     console.log(a); // }  // 使用 while 循环语句，实现和上方 for 循环相同的结果。执行顺序是先判断后执行。 var a = 0; while(a &amp;lt; 10){     console.log(&amp;apos;While&amp;apos; + a); // 不满足条件时，后面的语句不会执行。">
-<meta name="keywords" content="学习笔记">
-<meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript 学习笔记 第十篇 while 和 do-while">
-<meta property="og:url" content="/2019/06/18/P13/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="青衫">
+<meta property="og:url" content="/tags/学习笔记/page/2/index.html">
 <meta property="og:site_name" content="青衫">
-<meta property="og:description" content="// for(var a = 0;a &amp;lt; 10; a++){ //     console.log(a); // }  // 使用 while 循环语句，实现和上方 for 循环相同的结果。执行顺序是先判断后执行。 var a = 0; while(a &amp;lt; 10){     console.log(&amp;apos;While&amp;apos; + a); // 不满足条件时，后面的语句不会执行。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-18T06:45:38.196Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript 学习笔记 第十篇 while 和 do-while">
-<meta name="twitter:description" content="// for(var a = 0;a &amp;lt; 10; a++){ //     console.log(a); // }  // 使用 while 循环语句，实现和上方 for 循环相同的结果。执行顺序是先判断后执行。 var a = 0; while(a &amp;lt; 10){     console.log(&amp;apos;While&amp;apos; + a); // 不满足条件时，后面的语句不会执行。">
+<meta name="twitter:title" content="青衫">
   
   
     <link rel="icon" href="/favicon.png">
@@ -93,55 +88,80 @@
     <script>setLoadingBarProgress(40);</script>
     
     <main id="main" role="main">
-      <article id="post-P13" class="post article white-box article-type-post" itemscope itemprop="blogPost">
-	<h2 class="title">
-  	<a href="/blog/2019/06/18/P13/">
-    	JavaScript 学习笔记 第十篇 while 和 do-while
+      
+	<section class="page-header tag">
+    <h1>- <span>学习笔记</span> -</h1>
+  </section>
+
+
+
+
+
+
+<section class="post-list">
+	
+    <article class="post ">
+
+  
+  <h2 class="title">
+    <a href="/blog/2019/06/03/P3/">
+      JavaScript 学习笔记 第一篇 变量计算等
     </a>
   </h2>
-	<time>
-	  Jun 18, 2019
-	</time>
-	<section class="content">
-  	<div class="article-entry" itemprop="articleBody">
-    	<pre><code>// for(var a = 0;a &lt; 10; a++){
-//     console.log(a);
-// }
+  
+  <time>
+    Jun 3, 2019
+  </time>
+  <section class="content">
+	  <pre><code>//输出警告框
+alert(&quot;Hello,World!&quot;);
 
-// 使用 while 循环语句，实现和上方 for 循环相同的结果。执行顺序是先判断后执行。
-var a = 0;
-while(a &lt; 10){
-    console.log(&apos;While&apos; + a); // 不满足条件时，后面的语句不会执行。 
-    a++;
-}</code></pre><a id="more"></a>
+//单独定义变量和赋值
+var a ;
+a = 10;
 
-<pre><code>// 使用 do-while 语句实现和 while 语句相同的结果。这里的执行顺序是先执行后判断
-var a = 0;
-do{
-    console.log(&apos;Do While&apos; + a); // 不满足条件时，后面的语句仍然会执行一次。 
-    a++;
-}while(a &lt; 10)
+var b;
+b = 20;
 
-//死循环
-while(true){
+//可单独定义变量和赋值，也可变量和赋值一起定义。
+var c = 30;
+//输出日志，算出结果
+console.log(a,b);
 
-} //条件只用填上 true 即可
+//先输出再定义，会输出 undifined，因为 JavaScript中有变量声明提升的操作，
+//会吧 c = 30；这句话提升到 console.log 前面，
+//但 c = 10; 这句话的位置不变，所以相当于只定义了c，没有进行赋值，定义未完成，所以显示 undifined 。
+console.log(c);
+var c = 30;</code></pre>
 
-for(;true;){
-
-} //条件前后仍需填上分号，避免语法错误。</code></pre>
-  	</div>
-
-	  <div class="article-tags tags">
-		  
-        <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-      
+    
+	  <div class="readmore">
+      <a href="/blog/2019/06/03/P3/">Read More</a>
+    </div>
+    
+    
+    
+	  <div class="tags">
+      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
 	  </div>
-	</section>
+    
+
+  </section>
 </article>
+  
+</section>
 
 
-
+  <nav id="page-nav">
+    
+    <a class="prev" rel="prev" href="/blog/tags/学习笔记/">
+      <span class="icon icon-chevron-left"></span>
+      <span class="text">Previous</span>
+    </a>
+    
+    
+  </nav>
+  
 
       <script>setLoadingBarProgress(60);</script>
     </main>
