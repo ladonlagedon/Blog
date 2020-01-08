@@ -105,7 +105,7 @@
 
   
   <h2 class="title">
-    <a href="/blog/2019/06/26/P15/">
+    <a href="/blog/2019/06/26/P4/">
       关于找房子要问的问题
     </a>
   </h2>
@@ -131,7 +131,7 @@
 
     
 	  <div class="readmore">
-      <a href="/blog/2019/06/26/P15/">Read More</a>
+      <a href="/blog/2019/06/26/P4/">Read More</a>
     </div>
     
     
@@ -148,424 +148,29 @@
 
   
   <h2 class="title">
-    <a href="/blog/2019/06/18/P14/">
-      JavaScript 学习笔记 第十一篇 函数
+    <a href="/blog/2019/06/03/P3/">
+      关于 MagicaVoxel 以及 Minecraft 的一些小工具
     </a>
   </h2>
   
   <time>
-    Jun 18, 2019
+    Jun 3, 2019
   </time>
   <section class="content">
-	  <pre><code>//函数的定义、调用。
-function haha(){
-    alert(&apos;Suprise&apos;);
-}
-
-function gg(){
-    alert(&apos;Jesuis&apos;);
-}
-
-// 自己写的关于弹出窗口调用函数的例子
-var a = parseInt(prompt(&apos;请输入你的号码&apos;,&apos;12&apos;));
-
-if(a == 10){
-    haha();
-}else{
-    gg();
-}</code></pre>
+	  <h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>本文最初在 酷安 发表，今天再发到自己博客上做个收录。</p>
+<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p><img src="/blog/2019/06/03/P3/gyg.png" alt></p>
+<p>前些阵子在玩 MagicalVoxel 还有 Minecraft，分享一些好的工具：</p>
+<p>先说一声，配图的模型不是我做的，我只是导入到 MagicalVoxel 里做了个渲染。<br>这个作品原名叫《独乐寺观音阁》，很久以前好像在贴吧下的，如果侵权了麻烦告知我删除。</p>
 
     
 	  <div class="readmore">
-      <a href="/blog/2019/06/18/P14/">Read More</a>
+      <a href="/blog/2019/06/03/P3/">Read More</a>
     </div>
     
     
     
 	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/blog/2019/06/18/P13/">
-      JavaScript 学习笔记 第十篇 while 和 do-while
-    </a>
-  </h2>
-  
-  <time>
-    Jun 18, 2019
-  </time>
-  <section class="content">
-	  <pre><code>// for(var a = 0;a &lt; 10; a++){
-//     console.log(a);
-// }
-
-// 使用 while 循环语句，实现和上方 for 循环相同的结果。执行顺序是先判断后执行。
-var a = 0;
-while(a &lt; 10){
-    console.log(&apos;While&apos; + a); // 不满足条件时，后面的语句不会执行。 
-    a++;
-}</code></pre>
-
-    
-	  <div class="readmore">
-      <a href="/blog/2019/06/18/P13/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/blog/2019/06/18/P12/">
-      JavaScript 学习笔记 第九篇 Break 和 Continue
-    </a>
-  </h2>
-  
-  <time>
-    Jun 18, 2019
-  </time>
-  <section class="content">
-	  <pre><code>for (var i = 0; i &lt; 10; i++) {
-    console.log(i);
-
-    if (i == 5) {
-        break;
-    }
-}
-
-//for循环嵌套
-for (var x = 1; x &lt;= 4; x++) {
-    for (var y = 1; y &lt;= 8; y++) {
-        console.log(x, y);
-    }
-}
-
-//当 y = 2 时，跳出循环，输出 x 与 y 的值。执行完成的有 1,1; 1,2; 2,1; 2,2; 3,1; 3,2; 4,1; 4,2;
-for (var x = 1; x &lt;= 4; x++) {
-    for (var y = 1; y &lt;= 8; y++) {
-        console.log(x, y);
-        if (y == 2) {
-            break;
-        }
-    }
-}</code></pre>
-
-    
-	  <div class="readmore">
-      <a href="/blog/2019/06/18/P12/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/blog/2019/06/17/P11/">
-      JavaScript 学习笔记 第八篇 For 循环
-    </a>
-  </h2>
-  
-  <time>
-    Jun 17, 2019
-  </time>
-  <section class="content">
-	  <pre><code>for(var i = 0;i &lt;= 10;i++){
-    alert(i);
-}
-
-// JavaScript 执行时，条件不满足时，会直接跳出，执行后面的语句。
-for(var j = 0;j &gt;= 10;j++){
-    alert(j);
-}
-
-alert(&apos;After !!!&apos;);
-
-for(var k = 0;k &lt;= 14;k += 4){
-    console.log(k);
-}</code></pre>
-
-    
-	  <div class="readmore">
-      <a href="/blog/2019/06/17/P11/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/blog/2019/06/17/P10/">
-      JavaScript 学习笔记 第七篇 三元运算符
-    </a>
-  </h2>
-  
-  <time>
-    Jun 17, 2019
-  </time>
-  <section class="content">
-	  <pre><code>// 条件 ? value1 : value2
-var a = 1 &gt; 0 ? true : false;
-alert(a);
-
-// 使用三元运算符判断成绩
-var score = parseInt(prompt(&apos;输入成绩&apos;,1));
-score &gt;= 60 ? alert(&apos;及格&apos;) : alert(&apos;不及格&apos;);
-
-//使用三元运算符判断适龄可结婚条件 能进行适当精简，但不建议，避免可读性太差
-var age = parseInt(prompt(&apos;请输入年龄&apos;, 100));
-var sex = prompt(&apos;请输入性别&apos;, &apos;男&apos;);
-
-if(sex == &apos;男&apos;){
-    age &gt;= 22 ? alert(&apos;可以娶媳妇&apos;) : alert(&apos;不可以娶媳妇&apos;);
-}else if(sex == &apos;男&apos;){
-    age &gt;= 20 ? alert(&apos;可以嫁人&apos;) : alert(&apos;不可以嫁人&apos;);
-}else{
-    alert(&apos;请输入正确的性别 !!!&apos;);
-}</code></pre>
-
-    
-	  <div class="readmore">
-      <a href="/blog/2019/06/17/P10/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/blog/2019/06/17/P9/">
-      JavaScript 学习笔记 第六篇 Switch-Case
-    </a>
-  </h2>
-  
-  <time>
-    Jun 17, 2019
-  </time>
-  <section class="content">
-	  <pre><code>var star = prompt(&apos;输入星座&apos;, &apos;双鱼&apos;);
-
-switch (star) {
-    case &apos;双鱼&apos;:
-        alert(&apos;今天容易做事冲动不计后果&apos;);
-        break;
-
-    case &apos;双子&apos;:
-        alert(&apos;今天感情上你的情绪波动较大&apos;);
-        break;
-
-    case &apos;水平&apos;:
-        alert(&apos;今天个人状态一般，有些情绪不高&apos;);
-        break;
-
-    case &apos;摩羯&apos;:
-        alert(&apos;今天是时候做出点取舍，尽量离开那些让你感到不适的场所&apos;);
-        break;
-
-    default:
-        alert(&apos;未收录&apos;);
-        break;
-}</code></pre>
-
-    
-	  <div class="readmore">
-      <a href="/blog/2019/06/17/P9/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/blog/2019/06/17/P8/">
-      JavaScript 学习笔记 第五篇 If-Else
-    </a>
-  </h2>
-  
-  <time>
-    Jun 17, 2019
-  </time>
-  <section class="content">
-	  <pre><code>var score = parseInt(prompt(&apos;请输入成绩&apos;, 100));
-
-// 编写 if - else 语句
-if (score &gt;= 60) {
-    alert(&apos;及格了&apos;);
-} else {
-    alert(&apos;没及格&apos;);
-}
-
-//也可以只写 if 语句
-if (score &gt;= 60) {
-    alert(&apos;及格了&apos;);
-}
-
-// if - else if 语句
-if (score &gt;= 90) {
-    alert(&apos;真牛皮&apos;);
-}else if(score &gt;= 80 &amp;&amp; score &lt; 90){
-    alert(&apos;算不错&apos;);
-}else if(score &gt;= 60 &amp;&amp; score &lt; 80){
-    alert(&apos;还行吧&apos;);
-}else if(score &lt; 60){
-    alert(&apos;你不行&apos;);
-}</code></pre>
-
-    
-	  <div class="readmore">
-      <a href="/blog/2019/06/17/P8/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/blog/2019/06/17/P7/">
-      JavaScript 学习笔记 第四篇 逻辑运算与赋值运算
-    </a>
-  </h2>
-  
-  <time>
-    Jun 17, 2019
-  </time>
-  <section class="content">
-	  <pre><code>// 使用 Javascript 进行逻辑运算。
-true &amp;&amp; alert(&apos;haha&apos;); //会检查并执行后面的语句
-
-false &amp;&amp; alert(&apos;hahaa&apos;); //不会检查并执行后面的语句
-
-var age = parseInt(prompt(&apos;请输入年龄&apos;, 18));
-
-age &gt;= 18 &amp;&amp; alert(&apos;满十八岁，可考驾照。&apos;);
-
-age &lt; 18 &amp;&amp; alert(&apos;未满十八岁，不可考驾照。&apos;);
-
-// 负性的：false,null,0,NaN,空字符串(&quot;&quot;)，undifined，不会执行后面的结果。
-// 正性的：除了上面的，全是正性的。
-0 &amp;&amp; alert(&apos;haha&apos;);
-
-false &amp;&amp; alert(&apos;hah&apos;);
-
-true &amp;&amp; false || false &amp;&amp; !true // false 运算顺序为 非、与、或。</code></pre>
-
-    
-	  <div class="readmore">
-      <a href="/blog/2019/06/17/P7/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
-	  </div>
-    
-
-  </section>
-</article>
-  
-    <article class="post ">
-
-  
-  <h2 class="title">
-    <a href="/blog/2019/06/17/P6/">
-      JavaScript 学习笔记 第三篇 基本数学运算及隐式转换
-    </a>
-  </h2>
-  
-  <time>
-    Jun 17, 2019
-  </time>
-  <section class="content">
-	  <pre><code>// JavaScript 中的隐式转换，只存在于非 &apos;+&apos; 的运算中，因为 &apos;+&apos; 既是连字符也是加号。
-// 只要 undefined 参与运算 结果都是 NaN
-// true false null 都会隐式转换 纯数字字符串会隐式转换(加法除外)
-
-console.log(3 + 5); // 8
-console.log(3 + &apos;5&apos;); // 35
-console.log(3 - &apos;5&apos;); // -2
-console.log(3 * &apos;5&apos;); // 15
-console.log(3 / &apos;5&apos;); // 0.6
-
-console.log(&apos;3&apos; + &apos;5&apos;); // 35
-console.log(&apos;3&apos; - &apos;5&apos;); // -2
-console.log(&apos;3&apos; * &apos;5&apos;); // 15
-console.log(&apos;3&apos; / &apos;5&apos;);
-
-console.log(3 * true); // 3
-console.log(3 / false); // Infinity
-console.log(3 / null); // Infinity</code></pre>
-
-    
-	  <div class="readmore">
-      <a href="/blog/2019/06/17/P6/">Read More</a>
-    </div>
-    
-    
-    
-	  <div class="tags">
-      <a class="tag-link" href="/blog/tags/学习笔记/">学习笔记</a>
+      <a class="tag-link" href="/blog/tags/资源分享/">资源分享</a>
 	  </div>
     
 
@@ -574,17 +179,6 @@ console.log(3 / null); // Infinity</code></pre>
   
 </section>
 
-
-  <nav id="page-nav">
-    
-    
-    <a class="next" rel="next" href="/blog/archives/2019/page/2/">
-      <span class="text">Next</span>
-      <span class="icon icon-chevron-right"></span>
-    </a>
-    
-  </nav>
-  
 
 
       <script>setLoadingBarProgress(60);</script>
